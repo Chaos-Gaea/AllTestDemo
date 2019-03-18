@@ -6,18 +6,15 @@ package lyp.com.text.Incetence;
 
 public class Factory  {
 
-    public static Fruit getInstance(String fruitString){
-        Fruit fruit = null;
-
+    public static Fruit getInstance(String fruitString)
+        
         if (fruitString.equals("apple")){
-            fruit = new Apple();
+            return new Apple();
+        }else if (fruitString.equals("orange")){
+            return new Orange();
+        }else{
+        return null;
         }
-
-        if (fruitString.equals(  "orange")){
-             fruit = new Orange();
-        }
-
-        return fruit;
     }
 
 }
