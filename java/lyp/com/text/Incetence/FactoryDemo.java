@@ -7,7 +7,7 @@ package lyp.com.text.Incetence;
 public class FactoryDemo {
     public static void main(String[] args) {
         Fruit fruit = null;
-        fruit = Factory.getInstance("designMode.factory.Orange ");
+        fruit = Factory.getInstance("orange");
         fruit.eat();
     }
 
